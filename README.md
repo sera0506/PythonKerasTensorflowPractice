@@ -3,6 +3,7 @@
 ````
 pip install --upgrade tensorflow
 pip install sklearn matplotlib pandas ipython jupyter jupyterlab pillow
+pip install seaborn
 ````
 
 ### Regression
