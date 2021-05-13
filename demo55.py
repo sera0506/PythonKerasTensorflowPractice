@@ -21,7 +21,19 @@ Y = tf.compat.v1.placeholder(tf.float32)
 
 w = tf.Variable(0.0, name="weights")
 y_model = model(X, w)
+cost = tf.square(Y - y_model)
+print("cost = ", cost)
 
+train_op = tf.compat.v1.train.GradientDescentOptimizer(learning_rate).minimize(cost)
+init = tf.compat.v1.global_variables_initializer()
+with tf.compat.v1.Session() as session1:
+    session1.run(init)
+    for epoch in range(training_epochs):
+        print(f"#{epoch}#")
+        for x, y in zip(x_train, y_train):
+            session1.run(train_op, feed_dict={X: x, Y: y})
+    w_val = session1.run(w)
+y_learned = x_train * w_val
 plt.scatter(x_train, y_train)
+plt.plot(x_train, y_learned, 'r')
 plt.show()
-
