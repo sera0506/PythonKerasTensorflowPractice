@@ -10,3 +10,6 @@ pip install seaborn
 ### Logistic Regression
 ### SVM
 ### Decision Tree
+### K-MEAN
+### KNN
+### PCA (demo 40-43)
