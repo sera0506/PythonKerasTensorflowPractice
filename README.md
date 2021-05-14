@@ -13,4 +13,7 @@ pip install seaborn
 ### K-MEAN
 ### KNN
 ### PCA (demo 40-43)
-### TensorFlow (demo 44 - 55)
+### TensorFlow (demo 44 - 58)
+### K-Fold (demo 59-60)
+### MNIST (demo 68)
+### BMI (demo71)
