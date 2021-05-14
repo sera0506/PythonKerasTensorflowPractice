@@ -17,3 +17,4 @@ pip install seaborn
 ### K-Fold (demo 59-60)
 ### MNIST (demo 68)
 ### BMI (demo71)
+### CNN (demo74)
